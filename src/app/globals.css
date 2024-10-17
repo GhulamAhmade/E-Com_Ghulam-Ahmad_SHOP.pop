@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* If navbar__link is not being used, remove the hover effect */
+/* Add this to ensure the relative positioning */
+.navbar__link {
+    position: relative;
+}
+
+.navbar__link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: gray;
+    bottom: -1px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.navbar__link:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.navbar__link:hover {
+    color: #494747;
+}
