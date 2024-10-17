@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Slider from 'react-slick';  // Importing the Slider component
-import { Slide } from './Slide';  // Importing the custom Slide component
+import Image from 'next/image';    // Importing Next.js Image component
 
 export const Hero = () => {
     // Slider settings configuration
@@ -27,12 +27,14 @@ export const Hero = () => {
             <Slider {...settings}>  {/* Slider component with the settings */}
                 {slideData.map(item => (
                     <div key={item.id} className="w-full flex justify-center items-center">
-                    <img 
-                        src={item.img} 
-                        alt={`Slide ${item.id}`} 
-                        className="w-full h-auto object-cover rounded-lg"  // Ensures image covers the container with no cropping
-                    />
-                </div>  
+                        <Image 
+                            src={item.img} 
+                            alt={`Slide ${item.id}`} 
+                            width={1600}  // Adjust width
+                            height={500}  // Adjust height
+                            className="w-full h-auto object-cover rounded-lg"  // Ensures image covers the container with no cropping
+                        />
+                    </div>  
                 ))}
             </Slider>
         </div>

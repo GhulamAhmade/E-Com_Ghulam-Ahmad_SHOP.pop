@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React from 'react';
 import Slider from 'react-slick';  // Assuming you're using react-slick
 import "slick-carousel/slick/slick.css";  // Import slick styles
 import "slick-carousel/slick/slick-theme.css";
@@ -59,7 +59,7 @@ export const Testimonial = () => {
                                 </div>
                                 {/* Testimonial Quote */}
                                 <p className='text-gray-700 italic text-lg text-center transition-opacity duration-300 hover:opacity-80'>
-                                    "{testimonial.quote}"
+                                    &quot;{testimonial.quote}&quot;  {/* Escaped the quotes */}
                                 </p>
                             </div>
                         </div>  

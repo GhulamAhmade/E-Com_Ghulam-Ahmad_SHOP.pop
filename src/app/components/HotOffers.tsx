@@ -32,7 +32,7 @@ const productsData = [
         price: 800.00
     },
     {
-        img: "/iamge7.jpg",
+        img: "/image7.jpg",  // Fixed the typo from "iamge7.jpg" to "image7.jpg"
         title: "ZARA",
         desc: "Beautiful lawn suit",
         rating: 4,
@@ -50,9 +50,9 @@ const productsData = [
 export const WomensSection = () => {
     return (
         <div className='container pt-16'>
-            {/* Section Title for Men's Products */}
+            {/* Section Title for Hot Offers */}
             <h2 className='flex justify-center font-serif text-4xl pb-6 text-gray-800'>
-                <span className='text-2xl text-red-700 font-serif'>HOT</span>OFFER'S
+                <span className='text-2xl text-red-700 font-serif'>HOT</span> OFFER&apos;S  {/* Fixed the apostrophe */}
             </h2>
 
             {/* Grid Layout for Product Cards */}
@@ -72,5 +72,3 @@ export const WomensSection = () => {
         </div>
     );
 };
-
-

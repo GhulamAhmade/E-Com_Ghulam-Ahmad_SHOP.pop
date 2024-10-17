@@ -6,7 +6,7 @@ const productsData = [
     {
         img: "/image1.png",
         title: "Pant",
-        desc: "Men's White Pant",
+        desc: "Men's White Pant",  // The apostrophe will be escaped in JSX below
         rating: 4,
         price: 890.00
     },
@@ -45,7 +45,7 @@ export const MensSection = () => {
         <div className='container pt-16'>
             {/* Section Title for Men's Products */}
             <h2 className='flex justify-center font-medium text-4xl pb-6 text-gray-800'>
-                Men's
+                Men&apos;s  {/* Escaped the apostrophe */}
             </h2>
 
             {/* Grid Layout for Product Cards */}
