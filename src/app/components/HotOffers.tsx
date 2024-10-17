@@ -1,53 +1,53 @@
 import React from 'react';
-import { ProductCard } from './ProductCard';
+import { ProductCard } from './ProductCards';
 
 // Sample product data for display
 const productsData = [
     {
         img: "/image1.png",
         title: "Pant",
-        desc: "Men's White Pant",
+        desc: "White Pant",
         rating: 4,
         price: 890.00
     },
     {
         img: "/image2.png",
-        title: "T-Shirt",
-        desc: "Men's T-Shirt",
+        title: "Classic Shirt",
+        desc: "T-Shirt",
         rating: 5,
         price: 850.00
     },
     {
         img: "/image3.png",
         title: "T-shirt",
-        desc: "Mens' White T-Shirt",
+        desc: "White Tee",
         rating: 3,
         price: 790.00
     },
     {
         img: "/image5.png",
         title: "T-shirt",
-        desc: "Mens' Printed T-Shirt",
+        desc: "Printed Tee",
         rating: 5,
         price: 800.00
     },
     {
-        img: "/image7.jpg",  // Fixed the typo from "iamge7.jpg" to "image7.jpg"
-        title: "ZARA",
-        desc: "Beautiful lawn suit",
+        img: "/image7.jpg",
+        title: "ZARA Lawn",
+        desc: "Lawn Suit",
         rating: 4,
         price: 890.00
     },
     {
         img: "/image5.jpg",
         title: "Polo",
-        desc: "Men's Polo Shirt",
+        desc: "Polo Shirt",
         rating: 4,
         price: 890.00
     },
 ];
 
-export const WomensSection = () => {
+export const HotOffers = () => {
     return (
         <div className='container pt-16'>
             {/* Section Title for Hot Offers */}

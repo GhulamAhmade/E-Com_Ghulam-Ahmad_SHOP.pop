@@ -30,7 +30,7 @@ export const Footer = () => {
 
                     {/* WhatsApp Link */}
                     <a 
-                        href="https://wa.me/03308681055"
+                        href="https://wa.me/+92 330 8681055"
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="text-white hover:text-green-400 transition duration-300" 

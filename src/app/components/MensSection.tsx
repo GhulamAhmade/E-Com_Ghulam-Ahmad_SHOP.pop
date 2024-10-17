@@ -1,40 +1,40 @@
 import React from 'react';
-import { ProductCard } from './ProductCard';
+import { ProductCard } from './ProductCards';
 
 // Sample product data for display
 const productsData = [
     {
         img: "/image1.png",
         title: "Pant",
-        desc: "Men's White Pant",  // The apostrophe will be escaped in JSX below
+        desc: "White Pant",  // Shortened description
         rating: 4,
         price: 890.00
     },
     {
         img: "/image2.png",
-        title: "T-Shirt",
-        desc: "Men's T-Shirt",
+        title: "Classic Shirt",
+        desc: "T-Shirt",  // Shortened description
         rating: 5,
         price: 850.00
     },
     {
         img: "/image3.png",
         title: "T-shirt",
-        desc: "Mens' White T-Shirt",
+        desc: "White Tee",  // Shortened description
         rating: 3,
         price: 790.00
     },
     {
         img: "/image4.png",
         title: "T-shirt",
-        desc: "Mens' Printed T-Shirt",
+        desc: "Printed Tee",  // Shortened description
         rating: 5,
         price: 700.00
     },
     {
         img: "/image5.png",
         title: "T-shirt",
-        desc: "Mens' Printed T-Shirt",
+        desc: "Printed Tee",  // Shortened description
         rating: 5,
         price: 800.00
     },

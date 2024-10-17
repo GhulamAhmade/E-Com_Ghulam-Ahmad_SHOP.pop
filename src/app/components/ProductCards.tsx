@@ -13,7 +13,7 @@ interface PropsType {
 
 // Functional component to render a product card
 export const ProductCard: React.FC<PropsType> = ({ img, title, desc, rating, price }) => {
-  
+
   // Function to generate star ratings based on the rating number
   const generateRating = (rating: number) => {
     const stars = [];
@@ -37,7 +37,7 @@ export const ProductCard: React.FC<PropsType> = ({ img, title, desc, rating, pri
         {/* Generated Rating */}
         <div>{generateRating(rating)}</div> 
 
-        {/* Price and Add to Cart Button */}
+        {/* Price and Buy Button */}
         <div className='flex justify-between items-center space-x-2'>
           <div className='flex flex-col text-left sm:flex-row sm:items-center sm:space-x-2'>
             {/* Display current price */}
@@ -45,11 +45,10 @@ export const ProductCard: React.FC<PropsType> = ({ img, title, desc, rating, pri
             {/* Display original price with a strikethrough */}
             <del className='text-gray-400 text-sm'>${(price + 100).toFixed(2)}</del>
           </div>
-          {/* Button to add the product to the cart */}
+          {/* Button to buy the product */}
           <button className='bg-black text-white rounded-md px-3 py-1 text-xs sm:text-sm hover:bg-gray-700 transition duration-300 w-full sm:w-auto'>
-            {/* Show "Add" on small screens and "Add to Cart" on larger screens */}
-            <span className="block sm:hidden">Add</span> {/* Visible on mobile only */}
-            <span className="hidden sm:block">Add to Cart</span> {/* Visible on larger screens */}
+            {/* Show "Buy" on all screens */}
+            <span className="block">Buy</span>
           </button>
         </div>
       </div>
